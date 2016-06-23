@@ -7,10 +7,14 @@ import LoginHandler from './components/Login.js';
 let App = React.createClass({
   render() {
     return (
-      <div className="nav">
-        <Link to="app">Home</Link>
-        <Link to="login">Login</Link>
-        <RouteHandler/>
+      <div className="container-fluid">
+        <div className="container">
+          <div className="nav">
+            <Link to="app">Home</Link>&nbsp;|&nbsp;
+            <Link to="login">Login</Link>
+            <RouteHandler/>
+          </div>
+        </div>
       </div>
     );
   }
