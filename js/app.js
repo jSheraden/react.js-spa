@@ -23,5 +23,5 @@ let routes = (
 );
 
 Router.run(routes, function(Handler) {
-  React.router(<Handler/>, document.body);
+  React.render(<Handler/>, document.body);
 });
